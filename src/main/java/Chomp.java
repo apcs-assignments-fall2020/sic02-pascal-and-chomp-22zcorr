@@ -15,7 +15,17 @@ public class Chomp
     public static boolean eat(char[][] board, int row, int col)
     {        
         // YOUR CODE HERE
-        return false;
+
+        if(board.length<=row||board[0].length<=col||row<0||col<0||board[row][col]==(' ')){
+            return false;
+        }
+
+        for(int i = row; i<board.length;i++){
+            for(int j = col; j<board[i].length;j++){
+                board[i][j]=' ';
+            }
+        }
+        return true;
     }
     
     public static void printBoard(char[][] board)

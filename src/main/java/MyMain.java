@@ -30,6 +30,6 @@ public class MyMain {
         printTriangle(Pascal.pascalTriangle(5));
 
         // Code to play Chomp
-        // Chomp.play();
+        Chomp.play();
     }
 }
